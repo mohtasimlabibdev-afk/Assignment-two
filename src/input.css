@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@utility btn{
+      @apply px-4 py-[12.5px] rounded-full text-white bg-linear-to-r from-[#FFD700] via-[#FF0080] to-[#7928CA] transition-transform hover:scale-105
+}
+
+@utility container{
+      @apply max-w-300 mx-auto
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
+
+.float-animation {
+  animation: float 3s ease-in-out infinite;
+}
